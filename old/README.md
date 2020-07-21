@@ -1,4 +1,4 @@
-# chucknorris_facts
+# chucknorrisfacts
 
 ## Project setup
 ```
