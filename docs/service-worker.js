@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.4548e48868c7c023a473658b153d88c5.js"
+  "precache-manifest.2a7e095ba2cf4d42964b715727912da3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "chucknorris_facts"});
