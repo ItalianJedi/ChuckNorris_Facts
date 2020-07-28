@@ -15,23 +15,23 @@ import CubeSpinner from "@/components/CubeSpinner";
 export default {
   name: "ChuckNorris",
   components: {
-    spinner: CubeSpinner
+    spinner: CubeSpinner,
   },
   data() {
     return {
       currentJoke: null,
-      showSpinner: false
+      showSpinner: false,
     };
   },
   methods: {
     norrisJoke() {
       this.showSpinner = true;
-      axios.get("https://api.icndb.com/jokes/random").then(response => {
+      axios.get("https://api.icndb.com/jokes/random").then((response) => {
         this.showSpinner = false;
         this.currentJoke = response.data.value;
       });
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -45,19 +45,20 @@ export default {
 
 button {
   position: relative;
-  top: 50%;
+  top: 45%;
   font-family: "Londrina Shadow", cursive;
   font-weight: bold;
   opacity: 0.9;
-  background-color: #393c3f;
+  /*background-color: #393c3f;*/
+  background-color: #edf4fa;
   border: ridge gray;
   border: none;
   color: black;
-  padding: 15px 32px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 30px;
 }
 
 .joke {
@@ -81,11 +82,28 @@ button {
     border: ridge gray;
     width: 250px;
     padding: 10px;
-    margin: 60px;
+    margin: 35px;
     margin-top: 35px;
     margin-left: auto;
     margin-right: auto;
     background: #edf4fa;
+  }
+  button {
+    position: relative;
+    top: 45%;
+    font-family: "Londrina Shadow", cursive;
+    font-weight: bold;
+    opacity: 0.9;
+    /*background-color: #393c3f;*/
+    background: #edf4fa;
+    border: ridge gray;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
   }
 }
 

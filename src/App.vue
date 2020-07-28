@@ -19,12 +19,12 @@ export default {
   name: "App",
   data() {
     return {
-      backgroundUrl
+      backgroundUrl,
     };
   },
   components: {
-    ChuckNorris
-  }
+    ChuckNorris,
+  },
 };
 </script>
 
@@ -38,7 +38,9 @@ export default {
 .heading-primary-main {
   font-family: "Londrina Shadow", cursive;
   font-size: 80px;
-  color: #393c3f;
+  /*color: #393c3f;*/
+  color: #edf4fa;
+  text-shadow: 0 0 3px black, 0 0 10px black;
   font-weight: bold;
   position: absolute;
   top: 30%;
@@ -54,13 +56,30 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(110, 179, 239, 0.795),
-    rgba(43, 104, 158, 0.808)
-  );
   background-repeat: no-repeat;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  /*clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);*/
+}
+
+/*Phone screens*/
+@media only screen and (min-width: 320px) and (max-width: 700px) and (-webkit-min-device-pixel-ratio: 2) {
+  .heading-primary-main {
+    font-family: "Londrina Shadow", cursive;
+    font-size: 60px;
+    /*color: #393c3f;*/
+    color: #edf4fa;
+    font-weight: bold;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .header {
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    clip-path: 0, 0, 0, 0;
+  }
 }
 </style>

@@ -12,11 +12,17 @@
 
 <script>
 export default {
-  name: "CubeSpinner"
+  name: "CubeSpinner",
 };
 </script>
 
 <style scoped>
+h2 {
+  color: #edf4fa;
+  padding-top: 20px;
+  text-align: center;
+}
+
 .sk-folding-cube {
   margin: 20px auto;
   width: 40px;
@@ -41,7 +47,8 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #333;
+  /*background-color: #333;*/
+  background-color: #edf4fa;
   -webkit-animation: sk-foldCubeAngle 2.4s infinite linear both;
   animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
